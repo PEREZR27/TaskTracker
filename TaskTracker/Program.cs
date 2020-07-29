@@ -105,6 +105,7 @@ namespace TaskTracker
         public static void AddTask(List<string> Tasks)
 
         {
+            string item;
 
             do
 
@@ -114,11 +115,12 @@ namespace TaskTracker
 
                 Console.WriteLine("Enter nothing to exit");
 
-                Tasks.Add($"{Console.ReadLine()}");
+                item = Console.ReadLine();
+                Tasks.Add(item);
 
             }
 
-            while (Console.ReadLine() != "");
+            while (item != "");
 
         }
 
